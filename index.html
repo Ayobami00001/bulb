@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <img src="./image/off.png" alt="" id="bulb">
+    <button onclick="switchOn()" style="padding: 20px; background-color: blue;">
+        on
+    </button>
+    <button onclick="switchOff()" style="padding: 20px; background-color: red;">0ff</button>
+    <script>
+        const bulbImg =document.getElementById("bulb");
+
+        function switchOn(){
+            bulbImg.src = "/image/on.png"
+        }
+        function switchOff(){
+            bulbImg.src = "/image/off.png"
+        }
+    </script>
+
+</body>
+</html>
